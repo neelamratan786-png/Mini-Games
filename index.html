@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Games - Mini Games Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Aarav Games</h1>
+        <p>Your ultimate destination for fun, colorful mini-games!</p>
+    </header>
+
+    <main class="container">
+        <section id="game-menu">
+            <h2 style="color: #feca57; font-size: 1.8rem; margin-bottom: 0.5rem;">Select a Game</h2>
+            <div class="game-cards">
+                <div class="card" onclick="loadGame('guess')">
+                    <h3>🎯 Guess the Number</h3>
+                    <p>Can you guess the secret number between 1 and 100?</p>
+                </div>
+                <div class="card" onclick="loadGame('rps')">
+                    <h3>✂️ Rock, Paper, Scissors</h3>
+                    <p>Play the classic hand game against the computer!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-container" class="hidden">
+            <button id="back-btn" onclick="goHome()">⬅ Back to Menu</button>
+            <div id="game-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aarav Games. Built with ❤️ and Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
